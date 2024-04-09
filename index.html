@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./node_modules/accordion-js/dist/accordion.min.css">
+    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./src/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./src/style.css">
+
+</head>
+<body>
+<!--thumbnail start-->
+<!--    navbar start -->
+<div id="navbar" class="nav mx-auto position-absolute top-0 w-100 text-white">
+    <ul class="list-unstyled d-flex flex-row justify-content-between align-items-center w-100 px-5 mt-3">
+        <!--        Top icon setting-->
+        <li class="topIcon text-uppercase">xinvestia</li>
+        <li class="d-flex flex-row gap-3 text-capitalize align-items-center">
+            <div class="dropdown text-white">
+                <button class="btn dropdown-toggle navbarCenterItems activeNav" type="button"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                    Home
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">first page</a></li>
+                    <li><a class="dropdown-item" href="#">second page</a></li>
+                </ul>
+            </div>
+            <div class="navbarCenterItems">About</div>
+            <div class="dropdown">
+                <button class="btn dropdown-toggle text-white navbarCenterItems" type="button"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                    Pages
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">first page</a></li>
+                    <li><a class="dropdown-item" href="#">second page</a></li>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <button class="btn dropdown-toggle text-white navbarCenterItems" type="button"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                    Services
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">first page</a></li>
+                    <li><a class="dropdown-item" href="#">second page</a></li>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <button class="btn dropdown-toggle text-white navbarCenterItems" type="button"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                    News
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">first page</a></li>
+                    <li><a class="dropdown-item" href="#">second page</a></li>
+                </ul>
+            </div>
+            <div class="navbarCenterItems">Contact Us</div>
+        </li>
+        <li class="navbarButtonParent d-flex gap-3">
+            <button class="btn border-white border-1 btnSingIn text-white" type="button">
+                Sign up / Sign in
+            </button>
+            <div class="dropdown">
+                <button class="btn btnLang text-white border-white dropdown-toggle text-white navbarCenterItems btn border-dark border-1"
+                        type="button"
+                        id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    EN
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">first page</a></li>
+                    <li><a class="dropdown-item" href="#">second page</a></li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+</div>
+<!--    navbar end -->
+<section class="thumbnailContainer container px-0 overflow-hidden position-relative">
+
+    <div class="thumbnail-background-image w-100 h-100 position-relative">
+        <img class="img-fluid position-relative" src="./images/backgroundHandImage.jpg" alt="background image">
+        <div class="left-side-effect position-absolute top-0 h-100 start-0"></div>
+        <div class="right-side-effect position-absolute top-0  h-100 end-0"></div>
+        <div class="radialGradientDark w-100 h-100 position-absolute top-0"></div>
+        <div class="h-100 w-100 top-0 position-absolute start-0" id="particles-js"></div>
+    </div>
+
+    <!--    thumbnail body start-->
+    <div class="thumbnailBody w-100 h-100 position-absolute top-0 overflow-hidden">
+
+        <!--        image x setting start -->
+        <div class="center-image-x-parent w-50 position-absolute top-0">
+            <img class="greenXImage w-100 h-100 position-absolute" src="./images/greenX.svg" alt="">
+            <img class="purpleXImage w-100 h-100 position-absolute" src="./images/purpleX.svg" alt="">
+        </div>
+        <!--        image x setting end -->
+
+        <!--        bottom Icon start -->
+        <div class="bottomTextIcon position-absolute d-flex flex-column align-items-center w-100 h-100 justify-content-end">
+            <div class="position-relative">
+                <h1 class="text-uppercase bottomIconHeaderAnimate position-relative">xinvestia</h1>
+                <h1 class="text-uppercase bottomIconHeaderAnimate position-absolute">xinvestia</h1>
+            </div>
+            <h3 class="text-nowrap bottomIconTextAnimate text-white">Your success is our success</h3>
+        </div>
+        <!--        bottom Icon end-->
+
+        <div class=" w-100 h-100 d-flex justify-content-center">
+            <!--                        left sides sliders start-->
+            <div class="w-100 h-100 left-side-slides-parent">
+                <!--            left slides  -->
+                <div class="swiper left-side-slides w-100 h-100">
+                    <div class="swiper-wrapper text-white">
+                        <!--                                            first slide left side start-->
+                        <div class="swiper-slide first-slide-body pt-5 ">
+                            <div class="row pt-5 ">
+                                <div class="col col-5 offset-4 text-start text-box mt-5 pt-5 position-relative">
+                                    <div class="mt-5 pt-5 first-text">
+                                        <h3 class="h2">There is no weapon more powerful than ideas!</h3>
+                                        <p class="w-75 pt-5">
+                                            <strong>We</strong> are here, with a professional team and an enormous of
+                                            energy, waiting for you to bring your ideas to achieve the top creations
+                                            together.
+                                    </div>
+                                    <button class="first-slide-button btn btn-green mt-3">Read More...</button>
+                                    <div class="second-text opacity-0 mt-5">
+                                        <h3 class="h2 text-green">About us</h3>
+                                        <p class="mt-2">Xinvestia company works with the purpose of participation and
+                                            financing for
+                                            start-ups, growing companies and attractive ideas.
+                                            We fund successful future ideas, which have a scalable business model and
+                                            excellent exit potential. We also defend lean processes, specialized
+                                            knowledge
+                                            and efficient solutions. And we are innovating in the field of financing
+                                            professional online companies.</p>
+                                        <div class=" align-self-end pt-3 pe-5 float-end">
+                                            <span class="h6 text-green">Read More</span>
+                                            <img src="./images/readmoreFlashIcon.svg" alt="read more Flash Icon">
+                                        </div>
+                                    </div>
+
+                                    <div class="row opacity-0 mt-5 pt-5">
+                                        <button class="btn btn-change-slide">
+                                            <img class="" src="./images/arrow.svg" alt="change slide arrow">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--                    first slide left side end-->
+                        <!--                    second slide left side start-->
+                        <div class="swiper-slide second-slide-body pt-5">
+
+                            <div class="col col-9 offset-1">
+                                <div class="d-flex h5 align-items-center gap-2">
+                                    <img class="" src="./images/starsShape.svg" alt="">
+                                    <div class="h6 text-green pt-2">LOREM IPSUM</div>
+                                </div>
+                                <h2 class="mb-3">For start-ups, companies and interesting ideas</h2>
+                                <div class="card-body-parent d-flex flex-column gap-3">
+                                    <!--                            second slide first card start -->
+                                    <div class="row card-body border border-white p-5 w-100">
+                                        <div class="col col-2">
+                                            <svg class="card-box-svg " viewBox="0 0 57 60" fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M55.7457 13.2388L28.5034 0.0873633C28.2619 -0.0291211 27.9806 -0.0291211 27.7392 0.0873633L0.496758 13.2388C0.193008 13.3854 0 13.6931 0 14.0303V45.9697C0 46.3069 0.193008 46.6146 0.496758 46.7612L27.7391 59.9126C27.8598 59.9709 27.9906 60.0001 28.1213 60.0001C28.2519 60.0001 28.3826 59.9709 28.5034 59.9126L55.7457 46.7612C56.0495 46.6146 56.2425 46.3069 56.2425 45.9697V14.0304C56.2425 13.6929 56.0494 13.3856 55.7457 13.2388ZM28.1213 1.8549L53.342 14.0303L46.031 17.5598C45.9847 17.5245 45.9359 17.4919 45.8822 17.466L20.8328 5.37346L28.1213 1.8549ZM18.8479 6.36721L44.0319 18.5249L38.8739 21.0151L13.7003 8.86225L18.8479 6.36721ZM44.6211 20.1923V29.3969L39.8032 31.7228V22.5182L44.6211 20.1923ZM54.4847 45.4182L29.0002 57.7208V27.7334L35.079 24.7988C35.5161 24.5878 35.6994 24.0624 35.4884 23.6252C35.2773 23.1882 34.752 23.0047 34.3147 23.2158L28.1213 26.2059L25.6842 25.0293C25.247 24.818 24.7216 25.0015 24.5106 25.4387C24.2995 25.8758 24.4828 26.4012 24.9199 26.6123L27.2423 27.7334V57.7208L1.75781 45.4179V15.4306L21.1641 24.7992C21.2872 24.8587 21.4174 24.8868 21.5455 24.8868C21.8722 24.8868 22.1861 24.7038 22.3376 24.3898C22.5486 23.9527 22.3654 23.4272 21.9282 23.2162L2.90051 14.0303L11.6316 9.81533L38.0332 22.561C38.0371 22.5664 38.0414 22.5712 38.0454 22.5765V33.1232C38.0454 33.4257 38.2009 33.7068 38.4571 33.8677C38.5993 33.957 38.7616 34.0021 38.9244 34.0021C39.0547 34.0021 39.1854 33.9732 39.3064 33.9147L45.8822 30.7402C46.1859 30.5936 46.3789 30.2861 46.3789 29.9487V19.3438L54.4847 15.4307V45.4182Z"
+                                                      fill="currentColor"/>
+                                                <path d="M55.7457 13.2388L28.5034 0.0873633C28.2619 -0.0291211 27.9806 -0.0291211 27.7392 0.0873633L0.496758 13.2388C0.193008 13.3854 0 13.6931 0 14.0303V45.9697C0 46.3069 0.193008 46.6146 0.496758 46.7612L27.7391 59.9126C27.8598 59.9709 27.9906 60.0001 28.1213 60.0001C28.2519 60.0001 28.3826 59.9709 28.5034 59.9126L55.7457 46.7612C56.0495 46.6146 56.2425 46.3069 56.2425 45.9697V14.0304C56.2425 13.6929 56.0494 13.3856 55.7457 13.2388ZM28.1213 1.8549L53.342 14.0303L46.031 17.5598C45.9847 17.5245 45.9359 17.4919 45.8822 17.466L20.8328 5.37346L28.1213 1.8549ZM18.8479 6.36721L44.0319 18.5249L38.8739 21.0151L13.7003 8.86225L18.8479 6.36721ZM44.6211 20.1923V29.3969L39.8032 31.7228V22.5182L44.6211 20.1923ZM54.4847 45.4182L29.0002 57.7208V27.7334L35.079 24.7988C35.5161 24.5878 35.6994 24.0624 35.4884 23.6252C35.2773 23.1882 34.752 23.0047 34.3147 23.2158L28.1213 26.2059L25.6842 25.0293C25.247 24.818 24.7216 25.0015 24.5106 25.4387C24.2995 25.8758 24.4828 26.4012 24.9199 26.6123L27.2423 27.7334V57.7208L1.75781 45.4179V15.4306L21.1641 24.7992C21.2872 24.8587 21.4174 24.8868 21.5455 24.8868C21.8722 24.8868 22.1861 24.7038 22.3376 24.3898C22.5486 23.9527 22.3654 23.4272 21.9282 23.2162L2.90051 14.0303L11.6316 9.81533L38.0332 22.561C38.0371 22.5664 38.0414 22.5712 38.0454 22.5765V33.1232C38.0454 33.4257 38.2009 33.7068 38.4571 33.8677C38.5993 33.957 38.7616 34.0021 38.9244 34.0021C39.0547 34.0021 39.1854 33.9732 39.3064 33.9147L45.8822 30.7402C46.1859 30.5936 46.3789 30.2861 46.3789 29.9487V19.3438L54.4847 15.4307V45.4182Z"
+                                                      fill="currentColor"/>
+                                            </svg>
+                                        </div>
+                                        <div class="col">
+                                            <h3 class="row">Frequently Asked Questions</h3>
+                                            <p class="row pt-2">
+                                                In publishing and graphic design, Lorem ipsum is a placeholder
+                                                text
+                                                commonly used to demonstrate the visual form of a document or a
+                                                typeface without relying on meaningful content. </p>
+                                            <a href="#" class="text-decoration-none pt-2">
+                                                <img src="./images/readmoreFlashIcon.svg" alt="">
+                                                <span class="text-uppercase">read more</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!--                            second slide first card end -->
+                                    <!--                            second slide second card start -->
+                                    <div class="row card-body border border-white p-5 w-100">
+                                        <div class="col col-2">
+                                            <svg class="card-box-svg " viewBox="0 0 57 60" fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M55.7457 13.2388L28.5034 0.0873633C28.2619 -0.0291211 27.9806 -0.0291211 27.7392 0.0873633L0.496758 13.2388C0.193008 13.3854 0 13.6931 0 14.0303V45.9697C0 46.3069 0.193008 46.6146 0.496758 46.7612L27.7391 59.9126C27.8598 59.9709 27.9906 60.0001 28.1213 60.0001C28.2519 60.0001 28.3826 59.9709 28.5034 59.9126L55.7457 46.7612C56.0495 46.6146 56.2425 46.3069 56.2425 45.9697V14.0304C56.2425 13.6929 56.0494 13.3856 55.7457 13.2388ZM28.1213 1.8549L53.342 14.0303L46.031 17.5598C45.9847 17.5245 45.9359 17.4919 45.8822 17.466L20.8328 5.37346L28.1213 1.8549ZM18.8479 6.36721L44.0319 18.5249L38.8739 21.0151L13.7003 8.86225L18.8479 6.36721ZM44.6211 20.1923V29.3969L39.8032 31.7228V22.5182L44.6211 20.1923ZM54.4847 45.4182L29.0002 57.7208V27.7334L35.079 24.7988C35.5161 24.5878 35.6994 24.0624 35.4884 23.6252C35.2773 23.1882 34.752 23.0047 34.3147 23.2158L28.1213 26.2059L25.6842 25.0293C25.247 24.818 24.7216 25.0015 24.5106 25.4387C24.2995 25.8758 24.4828 26.4012 24.9199 26.6123L27.2423 27.7334V57.7208L1.75781 45.4179V15.4306L21.1641 24.7992C21.2872 24.8587 21.4174 24.8868 21.5455 24.8868C21.8722 24.8868 22.1861 24.7038 22.3376 24.3898C22.5486 23.9527 22.3654 23.4272 21.9282 23.2162L2.90051 14.0303L11.6316 9.81533L38.0332 22.561C38.0371 22.5664 38.0414 22.5712 38.0454 22.5765V33.1232C38.0454 33.4257 38.2009 33.7068 38.4571 33.8677C38.5993 33.957 38.7616 34.0021 38.9244 34.0021C39.0547 34.0021 39.1854 33.9732 39.3064 33.9147L45.8822 30.7402C46.1859 30.5936 46.3789 30.2861 46.3789 29.9487V19.3438L54.4847 15.4307V45.4182Z"
+                                                      fill="currentColor"/>
+                                                <path d="M55.7457 13.2388L28.5034 0.0873633C28.2619 -0.0291211 27.9806 -0.0291211 27.7392 0.0873633L0.496758 13.2388C0.193008 13.3854 0 13.6931 0 14.0303V45.9697C0 46.3069 0.193008 46.6146 0.496758 46.7612L27.7391 59.9126C27.8598 59.9709 27.9906 60.0001 28.1213 60.0001C28.2519 60.0001 28.3826 59.9709 28.5034 59.9126L55.7457 46.7612C56.0495 46.6146 56.2425 46.3069 56.2425 45.9697V14.0304C56.2425 13.6929 56.0494 13.3856 55.7457 13.2388ZM28.1213 1.8549L53.342 14.0303L46.031 17.5598C45.9847 17.5245 45.9359 17.4919 45.8822 17.466L20.8328 5.37346L28.1213 1.8549ZM18.8479 6.36721L44.0319 18.5249L38.8739 21.0151L13.7003 8.86225L18.8479 6.36721ZM44.6211 20.1923V29.3969L39.8032 31.7228V22.5182L44.6211 20.1923ZM54.4847 45.4182L29.0002 57.7208V27.7334L35.079 24.7988C35.5161 24.5878 35.6994 24.0624 35.4884 23.6252C35.2773 23.1882 34.752 23.0047 34.3147 23.2158L28.1213 26.2059L25.6842 25.0293C25.247 24.818 24.7216 25.0015 24.5106 25.4387C24.2995 25.8758 24.4828 26.4012 24.9199 26.6123L27.2423 27.7334V57.7208L1.75781 45.4179V15.4306L21.1641 24.7992C21.2872 24.8587 21.4174 24.8868 21.5455 24.8868C21.8722 24.8868 22.1861 24.7038 22.3376 24.3898C22.5486 23.9527 22.3654 23.4272 21.9282 23.2162L2.90051 14.0303L11.6316 9.81533L38.0332 22.561C38.0371 22.5664 38.0414 22.5712 38.0454 22.5765V33.1232C38.0454 33.4257 38.2009 33.7068 38.4571 33.8677C38.5993 33.957 38.7616 34.0021 38.9244 34.0021C39.0547 34.0021 39.1854 33.9732 39.3064 33.9147L45.8822 30.7402C46.1859 30.5936 46.3789 30.2861 46.3789 29.9487V19.3438L54.4847 15.4307V45.4182Z"
+                                                      fill="currentColor"/>
+                                            </svg>
+                                        </div>
+                                        <div class="col">
+                                            <h3 class="row">Frequently Asked Questions</h3>
+                                            <p class="row pt-2">
+                                                In publishing and graphic design, Lorem ipsum is a placeholder
+                                                text
+                                                commonly used to demonstrate the visual form of a document or a
+                                                typeface without relying on meaningful content. </p>
+                                            <a href="#" class="text-decoration-none pt-2">
+                                                <img src="./images/readmoreFlashIcon.svg" alt="">
+                                                <span class="text-uppercase">read more</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!--                            second slide second card end -->
+                                </div>
+                                <button class="btn btn-change-slide mt-3 w-100">
+                                    <img src="./images/arrow.svg" alt="change slide arrow">
+                                </button>
+                            </div>
+                        </div>
+
+                        <!--                    second slide left side end-->
+                        <!--                    third slide left side start-->
+                        <div class="swiper-slide">
+                            <section class="third-slide-body w-100 h-100 m-5 pt-2 d-flex flex-column p-5">
+                                <div class="top-header d-flex gap-2 pt-5 text-green">
+                                    <img src="./images/starsShape.svg" alt="">
+                                    <div class="">LOREM IPSUM</div>
+                                </div>
+                                <h2 class="row mb-5 mt-2">Why Xinvestia?</h2>
+                                <div class="third-slide-box mt-5">
+                                    <div class="d-flex align-items-start">
+                                        <div class="px-3 pt-2">
+                                            <img class="w-100 text-center" src="./images/tickactive.svg"
+                                                 alt="active tick icon">
+                                        </div>
+                                        <div class="text-box">
+                                            <h3 class="">Contribute to success</h3>
+                                            <p class="">We are here to support your idea and take it to the next
+                                                level.</p>
+                                        </div>
+                                    </div>
+                                    <div class="divider-green my-4"></div>
+                                    <div class="d-flex align-items-start">
+                                        <div class="px-3 pt-2">
+                                            <img class="w-100 text-center" src="./images/tick.svg"
+                                                 alt="active tick icon">
+                                        </div>
+                                        <div class="text-box">
+                                            <h3 class="">Contribute to success</h3>
+                                            <p class="">We are here to support your idea and take it to the next
+                                                level.</p>
+                                        </div>
+                                    </div>
+                                    <div class="divider-dark my-4"></div>
+                                    <div class="d-flex align-items-start">
+                                        <div class="px-3 pt-2">
+                                            <img class="w-100 text-center" src="./images/tick.svg"
+                                                 alt="active tick icon">
+                                        </div>
+                                        <div class="text-box">
+                                            <h3 class="">Contribute to success</h3>
+                                            <p class="">We are here to support your idea and take it to the next
+                                                level.</p>
+                                        </div>
+                                    </div>
+                                    <div class="divider-dark my-4"></div>
+                                </div>
+                            </section>
+                        </div>
+                        <!--                    third slide left side end-->
+                    </div>
+                    <!--                    left side slides end-->
+                </div>
+            </div>
+            <!--            right sides sliders start-->
+            <div class="w-100 h-100 right_side_slides_parent">
+                <div class="swiper w-100 h-100 right-side-slides">
+                    <div class="swiper-wrapper text-white">
+                        <!--                                            first slide left side start-->
+                        <div class="swiper-slide first-slide-body pt-5 ">
+                            <div class="row pt-5">
+                                <div class="col col-6 offset-4 text-start text-box mt-5 pt-5 position-relative">
+                                    <div class="mt-5 pt-5 pb-2 first-text">
+                                        <h3 class="h2 col-8">We are waiting for your ideas </h3>
+                                        <p class="w-75 pt-5">
+                                            <strong>You</strong>  are a creator who makes alive an innovation's spark in the business world with each idea.
+                                    </div>
+                                    <button class="first-slide-button btn btn-purple mt-5">Read More...</button>
+                                    <div class="second-text opacity-0 mt-5">
+                                        <h3 class="h4 text-purple">Are you ready to take your idea to the top?</h3>
+                                        <p class="mt-2">
+                                            With Xinvestia, take a step towards making your dreams come true.
+                                            Register now and join the group of leading innovators!
+                                        </p>
+                                    </div>
+
+                                    <div class="row opacity-0 mt-5 pt-5">
+                                        <button class="btn btn-change-slide d-flex ps-5">
+                                            <img class="" src="./images/arrow.svg" alt="change slide arrow">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--                    first slide left side end-->
+                        <!--                    second slide left side start-->
+                        <div class="swiper-slide pt-2">
+                            <div class="second-slide-body w-100 h-100 d-flex flex-column justify-content-center align-items-center position-relative">
+                                <img src="./images/Vertical_Timeline_Infographic.svg" alt="">
+                                <div class="col col-8 text-box position-absolute h-100 d-flex flex-column align-items-center gap-5 ps-5 text-center">
+                                    <div class="d-flex justify-content-between w-100 mt-5">
+                                        <h3 class="">1. Apply now</h3>
+                                        <p class="col-4">
+                                            Sign up and then the form
+                                            Fill out our application
+                                        </p>
+                                    </div>
+                                    <div class="d-flex justify-content-between w-100 mt-5">
+                                        <p class="col-4">
+                                            You send us your design, which contains all the information about your idea or
+                                            design
+                                        </p>
+                                        <h3 class="pe-5">
+                                            2. submit <br>
+                                            Design proposal
+                                        </h3>
+                                    </div>
+                                    <div class="d-flex justify-content-between w-100  ps-4">
+                                        <h3 class="mt-4">
+                                            3. Our feedback
+                                        </h3>
+                                        <p class="col-4">
+                                            After reviewing your application and proposed plan by the experts of the
+                                            relevant team, the result of the application will be sent to you within 4 to 6
+                                            weeks
+                                        </p>
+                                    </div>
+                                </div>
+                                <button class="btn btn-change-slide mt-5">
+                                    <img src="./images/arrow.svg" alt="change slide arrow">
+                                </button>
+                            </div>
+
+                        </div>
+
+                        <!--                    second slide left side end-->
+                        <!--                    third slide left side start-->
+                        <div class="swiper-slide">
+                            <div class="third-slide-body mx-auto h-100 mx-5">
+                                <h2 class="fourth-slide-header h1 text-start px-2 pt-4 col col-5">
+                                    Frequently Asked Questions
+                                </h2>
+                                <!--                            section accordion-->
+                                <div class="accordion-container bg-transparent col col-8">
+                                    <div class="ac bg-transparent border-0">
+                                        <h2 class="ac-header bg-transparent py-3 pe-4 ">
+                                            <button type="button" class="ac-trigger">How do you promote a creative agency?
+                                            </button>
+                                        </h2>
+                                        <div class="ac-panel">
+                                            <p class="ac-text text-start mb-2">The phrase implies that the agency's creative
+                                                solutions are not just theoretical or abstract concepts but deliver tangible
+                                                and measurable results. It emphasizes the agency's commitment</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="ac bg-transparent border-0 ">
+                                        <h2 class="ac-header bg-transparent py-3 pe-4">
+                                            <button type="button" class="ac-trigger">How do you promote a creative agency?
+                                            </button>
+                                        </h2>
+                                        <div class="ac-panel">
+                                            <p class="ac-text text-start ">The phrase implies that the agency's creative
+                                                solutions are not just theoretical or abstract concepts but deliver tangible
+                                                and measurable results. It emphasizes the agency's commitment</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="ac bg-transparent border-0 ">
+                                        <h2 class="ac-header bg-transparent py-3 pe-4">
+                                            <button type="button" class="ac-trigger">How do you promote a creative agency?
+                                            </button>
+                                        </h2>
+                                        <div class="ac-panel ">
+                                            <p class="ac-text text-start pe-4">The phrase implies that the agency's creative
+                                                solutions are not just theoretical or abstract concepts but deliver tangible
+                                                and measurable results. It emphasizes the agency's commitment</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="ac bg-transparent border-0 ">
+                                        <h2 class="ac-header bg-transparent py-3 pe-4">
+                                            <button type="button" class="ac-trigger">How do you promote a creative agency?
+                                            </button>
+                                        </h2>
+                                        <div class="ac-panel ">
+                                            <p class="ac-text text-start pe-4">The phrase implies that the agency's creative
+                                                solutions are not just theoretical or abstract concepts but deliver tangible
+                                                and measurable results. It emphasizes the agency's commitment</p>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="bottom-text my-5">
+                                        <h3 class="text-start">How do I promote my digital agency?</h3>
+                                        <p class="text-start mt-2">The phrase implies that the agency's creative solutions are
+                                            not just theoretical or abstract concepts but deliver tangible and measurable
+                                            results. It emphasizes the agency's commitment</p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <!--                    third slide left side end-->
+                    </div>
+                    <!--                    left side slides end-->
+                </div>
+            </div>
+            <!--            right sides sliders end-->
+        </div>
+
+    </div>
+    <!--    thumbnail body end-->
+
+</section>
+<!--thumbnail end-->
+
+
+<script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+<script src="./node_modules/accordion-js/dist/accordion.min.js"></script>
+<script src="./node_modules/jquery/dist/jquery.min.js"></script>
+<script src="./node_modules/particles.js/particles.js"></script>
+<script src="./src/gsap.min.js"></script>
+<script src="./src/js/bootstrap.bundle.min.js"></script>
+<script src="./src/index.js"></script>
+<script src="./src/sliders.js"></script>
+
+</body>
+</html>
+
+
